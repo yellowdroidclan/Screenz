@@ -1,0 +1,15 @@
+Screenz Android App
+
+Overview
+    Android utility app for quickly finding out some key information about the device's display and its capabilities. 
+    
+    Useful during development aimed at supporting UIs across multiple screen sizes and densities. 
+    
+    Particularly well suited for use in automated test environments.
+
+Release Notes:
+    Version 0.0.2: 
+        * Now also displays screen size in dp units
+
+    Version 0.0.1:
+        * First release published to Android Market.
