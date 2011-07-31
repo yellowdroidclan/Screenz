@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Screenz</string>
+    <string name="app_version">0.0.2</string>
+    
+    <string name="small">small</string>
+    <string name="normal">normal</string>
+    <string name="large">large</string>
+    <string name="xlarge">xlarge</string>
+    
+    <string name="ldpi">Low</string>
+    <string name="mdpi">Medium</string>
+    <string name="hdpi">High</string>
+    <string name="xhdpi">Xhigh</string>
+    
+    <string name="qvga">QVGA</string>
+    <string name="wqvga">WQVGA</string>
+    <string name="hvga">HVGA</string>
+    <string name="wvga">WVGA</string>
+    <string name="fwvga">FWVGA</string>
+    <string name="svga">SVGA</string>
+    <string name="wsvga">WSVGA</string>
+    <string name="xga">XGA</string>
+    <string name="wxga">WXGA</string>
+    
+    <string name="build_info">Build Info</string>
+    <string name="density">Density</string>
+    <string name="density_dpi">Density DPI</string>
+    <string name="display_metrics">Display Metrics</string>
+    <string name="dp">dp</string>
+    <string name="effective_screen_size">Effective Screen Size</string>
+    <string name="height">height</string>
+    <string name="landscape">Landscape</string>
+    <string name="portrait">Portrait</string>
+    <string name="resolution">Resolution</string>
+    <string name="scaled_density">Scaled Density</string>
+    <string name="physical_pixels">physical pixels</string>
+    <string name="size_pixels">Size (pixels)</string>
+    <string name="size_separator"> x </string>
+    <string name="undefined">Undefined</string>
+    <string name="unknown">Unknown</string>
+    <string name="width">width</string>
+    <string name="x_dpi">X DPI</string>
+    <string name="y_dpi">Y DPI</string>
+    
+</resources>

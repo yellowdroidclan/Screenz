@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/mainContainer" android:layout_height="match_parent" android:layout_width="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/mainTopLeft" android:layout_width="5mm" android:layout_height="5mm" android:background="#ffffffff"></LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mainTopRight" android:layout_alignParentRight="true" android:layout_height="5mm" android:layout_width="5mm" android:background="#ffffffff"></LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mainBottomLeft" android:layout_height="5mm" android:layout_width="5mm" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:background="#ffffffff"></LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mainBottomRight" android:layout_height="5mm" android:layout_width="5mm" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:background="#ffffffff"></LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:orientation="horizontal" android:id="@+id/mainTop" android:layout_toRightOf="@+id/mainTopLeft" android:layout_width="wrap_content" android:layout_toLeftOf="@+id/mainTopRight" android:visibility="visible" android:background="#ffffffff">
+        <org.screenz.views.ruler.HorizontalRulerView android:layout_height="5mm" android:id="@+id/topRulerView" android:layout_width="wrap_content" orientation="top"/>
+    </LinearLayout>
+    <LinearLayout android:layout_height="match_parent" android:id="@+id/mainLeft" android:layout_width="wrap_content" android:background="#ffffffff" android:layout_above="@+id/mainBottom" android:layout_below="@+id/mainTopLeft">
+        <org.screenz.views.ruler.VerticalRulerView android:layout_width="5mm" android:layout_height="wrap_content" android:id="@+id/leftRulerView" orientation="left"/>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/mainBottom" android:layout_width="match_parent" android:layout_alignParentBottom="true" android:background="#ffffffff" android:layout_toLeftOf="@+id/mainBottomRight" android:layout_toRightOf="@+id/mainBottomLeft">
+        <org.screenz.views.ruler.HorizontalRulerView android:layout_height="5mm" android:id="@+id/bottomRulerView" android:layout_width="wrap_content" orientation="bottom"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:orientation="vertical" android:id="@+id/mainRight" android:layout_height="match_parent" android:layout_alignParentRight="true" android:background="#ffffffff" android:layout_above="@+id/mainBottom" android:layout_below="@+id/mainTopRight">
+        <org.screenz.views.ruler.VerticalRulerView android:layout_width="5mm" android:layout_height="wrap_content" android:id="@+id/rightRulerView" orientation="right"/>
+    </LinearLayout>
+    <!--
+        Not sure why, but the Graphical view of the Eclipse IDE's Layout Editor hangs when it tries to open and display this file (on my system, at least) when our custom views are not commented out.
+        
+        So...
+        when you're needing to use the GUI editor, comment out all the custom views and use this RelativeLayout container in place of the CenterView, above. 
+    <RelativeLayout android:orientation="vertical" android:layout_below="@+id/mainTop" android:layout_toRightOf="@+id/mainLeft" android:id="@+id/mainCenter" android:layout_height="match_parent" android:layout_width="match_parent" android:layout_toLeftOf="@+id/mainRight" android:layout_above="@+id/mainBottom" android:background="#77c7c7c7">
+    </RelativeLayout>
+     -->
+    <org.screenz.views.grid.CenterView android:orientation="vertical" android:layout_below="@+id/mainTop" android:layout_toRightOf="@+id/mainLeft" android:id="@+id/mainCenter" android:layout_height="match_parent" android:layout_width="match_parent" android:layout_toLeftOf="@+id/mainRight" android:layout_above="@+id/mainBottom" android:background="#77c7c7c7">
+        <include android:id="@+id/mainCenterView" layout="@layout/center_view"/>
+    </org.screenz.views.grid.CenterView>
+</RelativeLayout>

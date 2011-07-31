@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="currentPositionColor">#cff77777</color>
+    
+    <color name="deviceBuildInfoBg">#cf66ccff</color>
+    <color name="infoDisplayBg">#c7ff3333</color>
+    <color name="metricsBg">#ffd7d7d7</color>
+    <color name="metricsHeaderBg">#ff777777</color>
+    <color name="metricsItemBg">#ff000000</color>
+    <color name="orientationBg">#c7a4c639</color>
+    <color name="screenConfigurationBg">#c73333ff</color>
+
+</resources>

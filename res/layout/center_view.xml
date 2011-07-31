@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:padding="10dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true">
+        <include android:id="@+id/mainInfo" layout="@layout/info_display"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:padding="10dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <include android:id="@+id/screenConfiguration" layout="@layout/screen_configuration"/>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/infoContainer" android:layout_width="wrap_content" android:layout_centerInParent="true" android:gravity="center_horizontal" android:padding="10dip" android:background="@drawable/info_view_bg">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_horizontal" android:background="@drawable/device_build_info_bg" android:padding="5dip">
+            <TextView android:layout_height="wrap_content" android:id="@+id/deviceBuildInfoView" android:layout_width="wrap_content" android:text="@string/build_info" style="@style/deviceBuildInfoText"></TextView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_horizontal">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_height="wrap_content" android:id="@+id/effectiveSizeWidthView" android:layout_width="wrap_content" style="@style/effectiveSizeText" android:text="@string/width"></TextView>
+                <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="dp"></TextView>
+                <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/effectiveSizeText" android:text="@string/size_separator" android:paddingLeft="5dp" android:paddingRight="5dp"></TextView>
+                <TextView android:layout_height="wrap_content" android:id="@+id/effectiveSizeHeightView" android:layout_width="wrap_content" style="@style/effectiveSizeText" android:text="@string/height"></TextView>
+                <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="dp"></TextView>
+            </LinearLayout>
+            <TextView android:layout_height="wrap_content" android:id="@+id/densityView" android:layout_width="wrap_content" android:text="@string/density" style="@style/densityText"></TextView>
+            <TextView android:layout_height="wrap_content" android:id="@+id/resolutionView" android:layout_width="wrap_content" style="@style/resolutionText" android:text="@string/resolution"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/metricsContainer" android:layout_width="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:gravity="center_horizontal" android:padding="10dip">
+        <org.screenz.views.metrics.MetricsView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/mainMetricsView" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="wrap_content" android:padding="10dp" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true">
+        <include android:id="@+id/mainOrientation" layout="@layout/orientation"/>
+    </LinearLayout>
+</RelativeLayout>

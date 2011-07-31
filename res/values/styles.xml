@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="infoText">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    
+    <style name="deviceBuildInfoText" parent="infoText">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="infoScreenSizeText" parent="infoText"/>
+    <style name="infoScreenDensityText" parent="infoText"/>
+    <style name="screenConfigText" parent="infoText"/>
+    <style name="orientationText" parent="infoText"/>
+    
+    <style name="effectiveSizeText" parent="infoText"/>
+    <style name="densityText" parent="infoText"/>
+    
+    <style name="dpText">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="resolutionText">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    
+    <style name="orientationBlackText">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="metricsLabel">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="metricsValue">
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="match_parent" android:orientation="vertical" android:background="@drawable/info_display_bg" android:layout_width="wrap_content">
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dip" android:id="@+id/infoScreenSize" android:text="Size" android:layout_alignParentLeft="true" style="@style/infoScreenSizeText"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/infoScreenSeparator" android:layout_toRightOf="@+id/infoScreenSize" style="@style/infoScreenDensityText" android:padding="5dip" android:text="/"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dip" android:id="@+id/infoScreenDensity" android:text="Density" style="@style/infoScreenDensityText" android:layout_toRightOf="@+id/infoScreenSeparator"></TextView>
+    </RelativeLayout>
+</LinearLayout>

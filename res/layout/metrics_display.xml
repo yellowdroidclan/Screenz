@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_height="wrap_content" android:background="@drawable/metrics_bg" android:layout_width="wrap_content" android:padding="10dp">
+    <TableLayout android:layout_height="wrap_content" android:id="@+id/metricsTable" android:layout_below="@+id/metricsHeader" android:layout_width="match_parent">
+        <TableRow android:id="@+id/metricsDensityRow" android:layout_height="wrap_content" android:background="@drawable/metrics_item_bg" android:layout_width="match_parent">
+        <TextView android:text="@string/density" android:layout_height="wrap_content" android:paddingRight="5dp" style="@style/metricsLabel" android:layout_width="wrap_content" android:id="@+id/metricsDensityLabel"></TextView>
+        <TextView android:layout_height="wrap_content" android:paddingRight="5dp" android:id="@+id/metricsDensity" android:layout_toRightOf="@+id/metricsDensityLabel" android:layout_centerVertical="true" android:text=" " android:layout_weight="1" android:gravity="right" android:layout_width="match_parent" style="@style/metricsValue"></TextView>
+        </TableRow>
+        <TableRow android:background="@drawable/metrics_item_bg" android:id="@+id/metricsScaledDensityRow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView style="@style/metricsLabel" android:layout_height="wrap_content" android:id="@+id/metricsScaledDensityLabel" android:paddingRight="5dp" android:layout_width="wrap_content" android:text="@string/scaled_density"></TextView>
+            <TextView style="@style/metricsValue" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/metricsScaledDensity" android:paddingRight="5dp" android:layout_width="match_parent" android:text=" " android:gravity="right"></TextView>
+        </TableRow>
+        <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/metricsDensityDpiRow" android:background="@drawable/metrics_item_bg">
+            <TextView android:layout_height="wrap_content" android:id="@+id/metricsDensityDpiLabel" android:layout_width="wrap_content" style="@style/metricsLabel" android:text="@string/density_dpi" android:paddingRight="5dp"></TextView>
+            <TextView android:layout_height="wrap_content" android:id="@+id/metricsDensityDpi" android:gravity="right" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_weight="1" android:text=" " style="@style/metricsValue"></TextView>
+        </TableRow>
+        <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@drawable/metrics_item_bg" android:id="@+id/metricsXdpiRow">
+            <TextView android:paddingRight="5dp" style="@style/metricsLabel" android:layout_height="wrap_content" android:id="@+id/metricsXdpiLabel" android:layout_width="wrap_content" android:text="@string/x_dpi"></TextView>
+            <TextView android:layout_weight="1" android:paddingRight="5dp" android:gravity="right" android:layout_height="wrap_content" android:id="@+id/metricsXdpi" android:layout_width="match_parent" android:text=" " style="@style/metricsValue"></TextView>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/metrics_item_bg" android:id="@+id/metricsYdpiRow">
+            <TextView android:paddingRight="5dp" style="@style/metricsLabel" android:layout_height="wrap_content" android:id="@+id/metricsYdpiLabel" android:layout_width="wrap_content" android:text="@string/y_dpi"></TextView>
+            <TextView android:gravity="right" android:paddingRight="5dp" android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/metricsYdpi" android:layout_width="match_parent" android:text=" " style="@style/metricsValue"></TextView>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

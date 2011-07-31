@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="infoText">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    
+    <style name="metricsLabel">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="metricsValue">
+        <item name="android:textSize">15sp</item>
+    </style>
+    
+</resources>
