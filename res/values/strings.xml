@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Screenz</string>
-    <string name="app_version">0.0.2</string>
+    <string name="app_version">0.0.3</string>
     
     <string name="small">small</string>
     <string name="normal">normal</string>
@@ -16,13 +16,37 @@
     <string name="qvga">QVGA</string>
     <string name="wqvga">WQVGA</string>
     <string name="hvga">HVGA</string>
+    <string name="vga">VGA</string>
     <string name="wvga">WVGA</string>
     <string name="fwvga">FWVGA</string>
     <string name="svga">SVGA</string>
     <string name="wsvga">WSVGA</string>
     <string name="xga">XGA</string>
     <string name="wxga">WXGA</string>
-    
+    <string name="wxga_plus">XGA+</string>
+    <string name="sxga">SXGA</string>
+    <string name="sxga_plus">SXGA+</string>
+    <string name="wsxga_plus">WSXGA+</string>
+    <string name="uxga">UXGA</string>
+    <string name="wuxga">WUXGA</string>
+    <string name="nhd">nHD</string>
+    <string name="qhd">qHD</string>
+    <string name="wqhd">WQHD</string>
+    <string name="qfhd">QFHD</string>
+    <string name="qwxga">QWXGA</string>
+    <string name="qxga">QXGA</string>
+    <string name="wqxga">WQXGA</string>
+    <string name="qsxga">QSXGA</string>
+    <string name="wqsxga">WQSXGA</string>
+    <string name="quxga">QUXGA</string>
+    <string name="wquxga">WQUXGA</string>
+    <string name="hxga">HXGA</string>
+    <string name="whxga">WHXGA</string>
+    <string name="hsxga">HSXGA</string>
+    <string name="whsxga">WHSXGA</string>
+    <string name="huxga">HUXGA</string>
+    <string name="whuxga">WHUXGA</string>
+                       
     <string name="build_info">Build Info</string>
     <string name="density">Density</string>
     <string name="density_dpi">Density DPI</string>

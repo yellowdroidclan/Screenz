@@ -10,6 +10,8 @@ Overview
 Release Notes:
     Version 0.0.2: 
         * Now also displays screen size in dp units
+		* Display cleaned up a bit
+		* Code cleaned a bit as well
 
     Version 0.0.1:
         * First release published to Android Market.
